@@ -1,0 +1,22 @@
+{
+  "name": "HBWebImage",
+  "version": "0.1.0",
+  "summary": "A short description of HBWebImage.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/haoboxuxu/HBWebImage",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "haoboxuxu": "haoboxuxu@icloud.com"
+  },
+  "source": {
+    "git": "https://github.com/haoboxuxu/HBWebImage.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "HBWebImage/Classes/**/*"
+}

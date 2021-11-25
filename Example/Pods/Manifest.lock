@@ -1,0 +1,16 @@
+PODS:
+  - HBWebImage (0.1.0)
+
+DEPENDENCIES:
+  - HBWebImage (from `../`)
+
+EXTERNAL SOURCES:
+  HBWebImage:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HBWebImage: 0c8a4afd97f73a89eca2956d5ea5d84b89789d0b
+
+PODFILE CHECKSUM: 7e372cc204044065715a2abb278e3162aed0b839
+
+COCOAPODS: 1.11.2

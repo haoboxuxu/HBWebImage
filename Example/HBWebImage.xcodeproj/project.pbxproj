@@ -15,6 +15,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		D88F7203274FB6FE00991791 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88F7201274FB6FE00991791 /* ImageCell.swift */; };
+		D88F7204274FB6FE00991791 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D88F7202274FB6FE00991791 /* ImageCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +32,7 @@
 /* Begin PBXFileReference section */
 		0AD2F74B8E6FA8FDA3743621 /* Pods-HBWebImage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBWebImage_Example.debug.xcconfig"; path = "Target Support Files/Pods-HBWebImage_Example/Pods-HBWebImage_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		391EB1DA35AE33DDB84DFBE9 /* Pods_HBWebImage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HBWebImage_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		454913C8667BE8A7F66D5CA9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		454913C8667BE8A7F66D5CA9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		540B673540BCC314465DDE19 /* Pods-HBWebImage_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBWebImage_Tests.release.xcconfig"; path = "Target Support Files/Pods-HBWebImage_Tests/Pods-HBWebImage_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* HBWebImage_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBWebImage_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,9 +45,11 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6840BA0F3B904E1C40CDFC53 /* Pods-HBWebImage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBWebImage_Example.release.xcconfig"; path = "Target Support Files/Pods-HBWebImage_Example/Pods-HBWebImage_Example.release.xcconfig"; sourceTree = "<group>"; };
-		762E0E5BDF7DAA6A45F1F10F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		762E0E5BDF7DAA6A45F1F10F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		7DD09D900B1D00565E1148A8 /* Pods_HBWebImage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HBWebImage_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A745DDE11C25F128EABA2AF1 /* HBWebImage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HBWebImage.podspec; path = ../HBWebImage.podspec; sourceTree = "<group>"; };
+		A745DDE11C25F128EABA2AF1 /* HBWebImage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HBWebImage.podspec; path = ../HBWebImage.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D88F7201274FB6FE00991791 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		D88F7202274FB6FE00991791 /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
 		EF7A156F17C9B11BF5EE38C9 /* Pods-HBWebImage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBWebImage_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HBWebImage_Tests/Pods-HBWebImage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +99,8 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				D88F7201274FB6FE00991791 /* ImageCell.swift */,
+				D88F7202274FB6FE00991791 /* ImageCell.xib */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -156,7 +162,6 @@
 				EF7A156F17C9B11BF5EE38C9 /* Pods-HBWebImage_Tests.debug.xcconfig */,
 				540B673540BCC314465DDE19 /* Pods-HBWebImage_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +232,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -247,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				D88F7204274FB6FE00991791 /* ImageCell.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -333,6 +340,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				D88F7203274FB6FE00991791 /* ImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
