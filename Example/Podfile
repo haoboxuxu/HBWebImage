@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'HBWebImage_Example' do
+  pod 'HBWebImage', :path => '../'
+
+  target 'HBWebImage_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
