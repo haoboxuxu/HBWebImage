@@ -17,11 +17,13 @@ class HBWebImageMemoryManager {
     private var keyChain: Set<NSNumber> = []
     
     func saveImageToMemory(image: UIImage, with key: NSNumber) {
-        objc_sync_enter(keyChain)
-        if !keyChain.contains(key) {
-            keyChain.insert(key)
+        //objc_sync_enter(keyChain)
+        serialQueue.sync {
+            if !keyChain.contains(key) {
+                keyChain.insert(key)
+            }
         }
-        objc_sync_exit(keyChain)
+        //objc_sync_exit(keyChain)
         cache.setObject(image, forKey: key)
         cachedSize[key] = image.sizeInBytes
         print("👾HBWebImageMemoryManager: saveImageToMemory")
