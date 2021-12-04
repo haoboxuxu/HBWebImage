@@ -15,6 +15,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		D860229D275B90DE006FAEF9 /* WebImageURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D860229C275B90DE006FAEF9 /* WebImageURLs.swift */; };
 		D88F7203274FB6FE00991791 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88F7201274FB6FE00991791 /* ImageCell.swift */; };
 		D88F7204274FB6FE00991791 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D88F7202274FB6FE00991791 /* ImageCell.xib */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		762E0E5BDF7DAA6A45F1F10F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		7DD09D900B1D00565E1148A8 /* Pods_HBWebImage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HBWebImage_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A745DDE11C25F128EABA2AF1 /* HBWebImage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HBWebImage.podspec; path = ../HBWebImage.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D860229C275B90DE006FAEF9 /* WebImageURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageURLs.swift; sourceTree = "<group>"; };
 		D88F7201274FB6FE00991791 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		D88F7202274FB6FE00991791 /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
 		EF7A156F17C9B11BF5EE38C9 /* Pods-HBWebImage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBWebImage_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HBWebImage_Tests/Pods-HBWebImage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				D88F7201274FB6FE00991791 /* ImageCell.swift */,
+				D860229C275B90DE006FAEF9 /* WebImageURLs.swift */,
 				D88F7202274FB6FE00991791 /* ImageCell.xib */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -338,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D860229D275B90DE006FAEF9 /* WebImageURLs.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				D88F7203274FB6FE00991791 /* ImageCell.swift in Sources */,
@@ -487,6 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HBWebImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -502,6 +507,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HBWebImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
