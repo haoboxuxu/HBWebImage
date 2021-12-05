@@ -29,7 +29,7 @@ Asynchronous image downloader with memory and disk cached as a UIImageView exten
   s.source           = { :git => 'https://github.com/haoboxuxu/HBWebImage.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.swift_version = '5.0'
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '14.0'
 
   s.source_files = 'HBWebImage/Classes/**/*'
   
