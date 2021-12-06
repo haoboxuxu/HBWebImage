@@ -17,8 +17,10 @@ class HBWebImageDiskManager {
         let bundleID = Bundle.main.bundleIdentifier
         DiskCachePath = NSHomeDirectory().appending("/Library").appending("/Caches/").appending(bundleID!).appending("/fsCachedData")
         
-        print("NSHomeDirectory = ", NSHomeDirectory())
-        print("DiskCachePath = ", DiskCachePath)
+        if __HBWebImageDevmode {
+            print("NSHomeDirectory = ", NSHomeDirectory())
+            print("DiskCachePath = ", DiskCachePath)
+        }
     }
     
    
@@ -30,9 +32,13 @@ class HBWebImageDiskManager {
     func saveDataToDisk(data: Data, with key: NSNumber) {
         let path = fullPath(key)
         if FileManager.default.createFile(atPath: path, contents: data) {
-            print("👾HBWebImageDiskManager: saveDataToDisk success")
+            if __HBWebImageDevmode {
+                print("👾HBWebImageDiskManager: saveDataToDisk success")
+            }
         } else {
-            print("👾HBWebImageDiskManager: saveDataToDisk failed")
+            if __HBWebImageDevmode {
+                print("👾HBWebImageDiskManager: saveDataToDisk failed")
+            }
         }
     }
     

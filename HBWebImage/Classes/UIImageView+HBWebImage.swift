@@ -8,8 +8,17 @@
 import UIKit
 
 extension UIImageView: HBWebImageProtocol {
-    //
+    
+    public func hbSetImageDevMode(with url: URL?, placeholderImage: UIImage? = nil, completion: ((UIImage?) -> Void)? = nil) {
+        __HBWebImageDevmode = true
+        self.__hbSetImage(with: url, placeholderImage: placeholderImage, completion: nil)
+    }
+    
     public func hbSetImage(with url: URL?, placeholderImage: UIImage? = nil, completion: ((UIImage?) -> Void)? = nil) {
+        self.__hbSetImage(with: url, placeholderImage: placeholderImage, completion: nil)
+    }
+    
+    private func __hbSetImage(with url: URL?, placeholderImage: UIImage? = nil, completion: ((UIImage?) -> Void)? = nil) {
         MainQueue.async {
             if let placeholderImage = placeholderImage {
                 self.image = placeholderImage

@@ -26,15 +26,21 @@ class HBWebImageMemoryManager {
         //objc_sync_exit(keyChain)
         cache.setObject(image, forKey: key)
         cachedSize[key] = image.sizeInBytes
-        print("👾HBWebImageMemoryManager: saveImageToMemory")
+        if __HBWebImageDevmode {
+            print("👾HBWebImageMemoryManager: saveImageToMemory")
+        }
     }
     
     func fetchImageFromMemory(with key: NSNumber) -> UIImage? {
         if !keyChain.contains(key) {
-            print("👾HBWebImageMemoryManager: fetchImageFromMemory failed")
+            if __HBWebImageDevmode {
+                print("👾HBWebImageMemoryManager: fetchImageFromMemory failed")
+            }
             return nil
         }
-        print("👾HBWebImageMemoryManager: fetchImageFromMemory success")
+        if __HBWebImageDevmode {
+            print("👾HBWebImageMemoryManager: fetchImageFromMemory success")
+        }
         return cache.object(forKey: key)
     }
     

@@ -9,28 +9,27 @@ import Foundation
 import UIKit
 
 class HBWebImageCacheManger {
-    private var devmode = true
-    
-    init(_ devmode: Bool?) {
-        if let devmode = devmode {
-            self.devmode = devmode
-        }
-    }
     
     static func fetchCachedImage(urlStr: String) -> UIImage? {
         let key = getKey(from: urlStr)
         if let cachedImage = HBWebImageMemoryManager.shared.fetchImageFromMemory(with: key) {
-            print("👾HBWebImageCacheManger: fetchCachedImage from Memory success")
+            if __HBWebImageDevmode {
+                print("👾HBWebImageCacheManger: fetchCachedImage from Memory success")
+            }
             return cachedImage
         }
         
         if let data = HBWebImageDiskManager.shared.fetchDataFromDisk(with: key) {
             let cachedImage = UIImage(data: data)
-            print("👾HBWebImageCacheManger: fetchCachedImage from Disk success")
+            if __HBWebImageDevmode {
+                print("👾HBWebImageCacheManger: fetchCachedImage from Disk success")
+            }
             HBWebImageMemoryManager.shared.saveImageToMemory(image: UIImage(data: data)!, with: key)
             return cachedImage
         }
-        print("👾HBWebImageCacheManger: fetchCachedImage failed")
+        if __HBWebImageDevmode {
+            print("👾HBWebImageCacheManger: fetchCachedImage failed")
+        }
         return nil
     }
     
